@@ -1,0 +1,307 @@
+html {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header img {
+
+    width: 100%;
+    height: 60vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+    background-color: #cdb38b;
+}
+
+nav .logo img {
+    height: 6%;
+    width: 6%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+
+    transition: 0.4s;
+}
+
+.hbdiv {
+    margin: 100px 80px 20px 80px;
+    background-color: white;
+    color: #cdb38b;
+}
+
+.hbdiv h3 {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 30px;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+}
+
+tr:hover {
+    background-color: #f4efeb;
+}
+
+tr td a {
+    color: black;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+tr td a:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+/* ebru */
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    left: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+
+.whatsapp .whatsapp-btn {
+    font-size: 50px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotate(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp .whatsapp-btn:hover+span {
+    transform: rotate(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+/* ------------- */
+
+
+.name {
+
+    padding: 50px;
+}
+
+.name .hr1 {
+    margin-right: 900px;
+    opacity: 0.6;
+}
+
+.name .hr2 {
+    margin-left: 900px;
+    opacity: 0.6;
+}
+
+.name h2 {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 35px;
+}
+
+.name1 {
+    margin: 0 80px 40px 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact1 a {
+    margin-left: 12px;
+}
+.contact1 a img:hover{
+    border: 1px solid black;
+    padding: 5px;
+    transition: 0.4s;
+    background-color: #cdb38b;
+    border-radius: 30px;
+}
+
+.contact p {
+    font-weight: bold;
+}
+
+/* aslı-ebru */
+.flex-kullanim {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.ozet img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    border-radius: 60px;
+}
+
+.az {
+
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    border-radius: 80px;
+    text-indent: 40px;
+    margin: 50px 500px 25px 30px;
+}
+
+.sj {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section ul li {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+section ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
+section ul li a:hover {
+    transition: .3s;
+    color: #cdb38b;
+    border-color: #cdb38b;
+    padding-bottom: 1px;
+}
+
+.font-design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-ikon {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.footer-ikon i {
+    color: white;
+    padding: 0.50rem;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 0.75rem;
+    transition: all 0.4s ease;
+}
+
+.footer-ikon :hover i {
+    background-color: #cdb38b;
+    color: white;
+}
+
+.footer-ikon a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer1 a {
+    color: white;
+}
+
+.footer1 a:hover {
+    color: #cdb38b;
+}

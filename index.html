@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="st-slider" >
+
+        <div class="hero">
+            <nav>
+              <div class="logo">
+                <img src="imagessssss/logo.jpeg">
+              </div>
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="#">HAKKIMIZDA</a></li>
+                    <li><a href="#">ÜRÜNLER</a></li>
+                    <li><a href="#">HİZMET</a></li>
+                    <li><a href="#">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+       </div>
+
+        <input type="radio" name="slider" class="radio" id="play1" checked="">
+        <input type="radio" name="slider" class="radio" id="slide1">
+        <input type="radio" name="slider" class="radio" id="slide2">
+        <input type="radio" name="slider" class="radio" id="slide3">
+        <div class="images">            
+            <div class="images-inner">
+                <div class="images-slide">
+                    <div class="banner-1">
+                        <div class="slider-text">
+                            <h2 data-text="YENİ">YENİ</h2>
+                            <h2 data-text="SEZON">SEZON</h2>
+                            <button class="banner-text btn-text">
+                                ŞİMDİ İNCELE 
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="images-slide">
+                    <div class="banner-2">
+                        <div class="slider-text">
+                            <button class="banner-text btn-text">
+                                ŞİMDİ İNCELE 
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="images-slide">
+                    <div class="banner-3">
+                        <div class="slider-text">
+                            <button class="banner-text btn-text">
+                                ŞİMDİ İNCELE 
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="labels">
+            <div class="fake-radio">
+                <label for="slide1" class="radio-btn"></label>
+                <label for="slide2" class="radio-btn"></label>
+                <label for="slide3" class="radio-btn"></label>
+            </div>
+
+        </div>
+    </div>
+    </header>
+    
+
+     <!-- Volkan  -->
+    <section>
+        <div class="faq-baslik"><h1>Sıkça sorulan Sorular</h1></div>
+        <div class="faq-container">
+            <div class="faq">
+              <div class="question">Ürünleri nasıl sipariş edebilirim?</div>
+              <div class="answer">Sitemizde beğendiğiniz ürünü sepetinize ekleyerek ve ödeme adımlarını takip ederek sipariş verebilirsiniz.</div>
+            </div>
+            <div class="faq">
+              <div class="question">Siparişler ne kadar sürede teslim edilir?</div>
+              <div class="answer">Siparişlerinizin teslim süresi ürünün stok durumuna ve bulunduğunuz bölgeye göre değişebilir. Genellikle, siparişiniz 2-5 iş günü içinde teslim edilir.</div>
+            </div>
+            <div class="faq">
+              <div class="question">Ürün iade ve değişim işlemleri nasıl yapılır?</div>
+              <div class="answer">Eğer üründen memnun kalmazsanız, ürünü teslim aldığınız tarihten itibaren 7 gün içinde iade veya değişim talebinde bulunabilirsiniz. İade ve değişim prosedürleri için müşteri hizmetlerimizle iletişime geçebilirsiniz.</div>
+            </div>
+            <div class="faq">
+                <div class="question">Ödeme yöntemleri nelerdir?</div>
+                <div class="answer">Sitemizde kredi kartı, banka havalesi ve kapıda ödeme gibi farklı ödeme yöntemleri bulunmaktadır. Sipariş aşamasında size uygun olan ödeme yöntemini seçebilirsiniz.</div>
+              </div>
+          </div>
+    </section>
+
+    <!-- ------------------------ -->
+
+    <script>
+        //  Volkan --------
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach((faq) => {
+        const question = faq.querySelector(".question");
+        const answer = faq.querySelector(".answer");
+
+        question.addEventListener("click", () => {
+        const expanded = answer.style.maxHeight;
+
+    
+        faqs.forEach((otherFaq) => {
+            const otherAnswer = otherFaq.querySelector(".answer");
+            if (otherFaq !== faq) {
+            otherAnswer.style.maxHeight = null;
+            }
+            });
+
+            if (expanded) {
+        answer.style.maxHeight = null;
+        } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+     });
+    });
+
+// Volkan -----------
+    </script>
+</body>
+</html>

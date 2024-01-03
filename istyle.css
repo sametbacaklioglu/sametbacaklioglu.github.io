@@ -1,0 +1,283 @@
+html{
+    font-family: "Rubik" , sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+    background-color: #cdb38b;  
+}
+
+nav .logo img {
+    height: 6%;
+    width: 6%;
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+   
+    transition: 0.4s;
+}
+.header-arka{
+    width: 100%;
+    height: 60vh;
+    background: url(img/iletisim.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    left: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes fade-up{
+    100%{
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+.whatsapp .whatsapp-btn{
+    font-size: 50px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+.whatsapp .whatsapp-btn:hover{
+    transform: scale(1.2);
+}
+.whatsapp span{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-weight: bold;
+    color:#075e54 ;
+    transform: rotate(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp .whatsapp-btn:hover +span{
+    transform: rotate(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+.harita {
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+.toplam {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+}
+.cont-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iletisim-ikon{padding: 1rem;}
+
+.iletisim-ikon i{
+    color: black;
+    padding: 0.60rem ;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+.iletisim-ikon :hover i{
+    background-color: bisque;
+    color:black;
+}
+.iletisim-ikon a{
+    color:black;
+    text-decoration: none;
+
+}
+.iletisim-font-design{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    font-size: 1.1rem;
+}
+.cont-right {
+    padding: 4px;
+}
+.cont-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont-right form input,
+textarea,
+button {
+    width: 400px;
+    margin: 5px 0;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    padding: 10px 6px;
+    outline: none;
+    border: 1px solid black;
+    transition: all 0.4s ease;
+}
+
+.cont-right form button {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+.cont-right form input:hover,
+textarea:hover {
+    background-color: #cdb38b;
+   color: white;
+}
+
+.cont-right form input:focus,
+textarea:focus {
+    color: black;
+    background-color: white;
+}
+
+.cont-right form button:hover {
+    background-color:  #cdb38b;
+    color: black;
+}
+
+
+.flex-kullanim{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.ozet img{
+  width: 100px;
+  height: 100px;
+  margin-left: 40px ;
+  border-radius: 53px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+}
+section ul li{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; 
+}
+section ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid  transparent;
+}
+section ul li a:hover{
+    transition: .3s;
+    color: #cdb38b;
+    border-color: #cdb38b;
+    padding-bottom: 1px;
+}
+.font-design{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-ikon{padding: 1rem; margin: 1rem; float: left;}
+
+.footer-ikon i{
+    color: white;
+    padding: 0.40rem ;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+.footer-ikon :hover i{
+    background-color: #cdb38b;
+    color:white;
+}
+.footer-ikon a{
+    color:white;
+    text-decoration: none;
+
+} 
+
+.footer1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.footer1 a{
+    color: white;
+}
+.footer1 a:hover{
+    color: #cdb38b;
+}
+
+
+
+
+ 

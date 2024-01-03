@@ -1,0 +1,297 @@
+html {
+    font-family: "Rubik", sans-serif;
+    background-color: #f2f2f2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header img {
+
+    width: 100%;
+    height: 60vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+    background-color: #cdb38b;  
+}
+
+nav .logo img {
+    height: 6%;
+    width: 6%;
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul li a:hover {
+   
+    transition: 0.4s;
+}
+
+.baslik {
+    font-size: large;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.column .imgdiv {
+    margin-left: 8px;
+}
+
+.column .imgdiv img {
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    opacity: 0.7;
+}
+
+.column .imgdiv img:hover {
+    opacity: 1;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.column .pdiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+    margin-right: 8px;
+    box-shadow: 10px 10px 10px #cdb38b;
+    background: linear-gradient(to right, #cdb38b, #f8f8ff);
+}
+
+.column .pdiv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.column .pdiv a:hover {
+    transition: 0.4s;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    left: 30px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes fade-up{
+    100%{
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+.whatsapp .whatsapp-btn{
+    font-size: 50px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+.whatsapp .whatsapp-btn:hover{
+    transform: scale(1.2);
+}
+.whatsapp span{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-weight: bold;
+    color:#075e54 ;
+    transform: rotate(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp .whatsapp-btn:hover +span{
+    transform: rotate(0deg) translateX(0px);
+    opacity: 1;
+}
+
+.comment{
+    margin: 40px 80px 60px 80px;
+}
+
+.commentone{
+    margin: 40px 0 40px 0;
+}
+
+.commentone h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.commentone p a{
+    color: black;
+}
+.commentone p a:hover{
+    font-size: 17px;
+    transition: 0.4s;
+}
+
+.bosdiv{
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+
+.flex-kullanim {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.ozet img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    border-radius: 53px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+}
+
+section ul li {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+section ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
+section ul li a:hover {
+    transition: .3s;
+    color: #cdb38b;
+    border-color: #cdb38b;
+    padding-bottom: 1px;
+}
+
+.font-design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-ikon {
+    padding: 1rem;
+    margin: 1rem;
+    float: left;
+}
+
+.footer-ikon i {
+    color: white;
+    padding: 0.40rem;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.footer-ikon :hover i {
+    background-color: #cdb38b;
+    color: white;
+}
+
+.footer-ikon a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer1{
+    background-color: black;
+    color: white;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+.footer1 a{
+    color: white;
+}
+.footer1 a:hover{
+    color: #cdb38b;
+}
