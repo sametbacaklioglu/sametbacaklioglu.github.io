@@ -1,262 +1,220 @@
-.st-slider{
-    position: relative;
-}
+/* .container{
+    margin: 0 130px 0 130px;
+    font-family: sans-serif;
+} */
 
 .hero{
-    position: absolute;
-   
+    height: 100vh;
     width: 100%;
+    background:url(imagesss/iletişimbannerelli.png)no-repeat;
     background-size: cover;
     background-position: center;
     transition: 0.5s;
+   
   }
-  .logo img{
-    width: 70px;
-    height: 70px;
-    margin-left: 26px;
-    margin-top: 15px; 
-  }
+  
+  
   nav{
       display: flex;
-      align-items: start;
-      justify-content:space-between;
-      padding: 10px 10px 0 10px;  
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 10px 0 10px;
+      
+      
   }
+.header-logo img{
+    width: 80px;
+    height: 80px;
+}
+  
   nav ul li{
-      list-style-type: none; 
+      list-style-type: none;
+      color: #a98182;
       display: inline-block;
-      padding: 0 20px;   
+      padding: 10px 20px;
   }
   nav ul li a{
       text-decoration: none;
       font-weight: bold;
-      color: #a0522d;
-      font-size: 20px;    
+      color: yellow;
+  }
+  nav ul li a:hover{
+      transition: .3s;
+      color:  #a98182;
   }
 
 
-.banner-1 {
-    background: url(imagessssss/headerbannerbir.jpeg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-}
 
-h2 {
-    position: relative;
-    font-size: 10vw;
-    color:transparent;
-    -webkit-text-stroke: 0.3vw transparent;
-    text-transform: uppercase;
-    margin-top: -80px;
-    margin-left: 120px;
-    margin-bottom: 70px;
-}
-h2::before {
-    content: attr(data-text);
-    position: absolute;
-    top:-20px;
-    left:0;
-    width: 0;
-    height: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:#8b4513;
-    -webkit-text-stroke: 0vw transparent;   
-    overflow: hidden;
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-
-
-    0% ,10%,100%{
-        width: 0;
-    }
-    70%,90%{
-        width: 100%;
-    }
-}
-.banner-2 {
-    background: url(imagessssss/headerbanneriki.jpeg) no-repeat center;
-    background-size: cover;  
-    height: 100vh;
-    width: 100vw;
-}
-.banner-3 {
-    background: url(imagessssss/headerbanneruc.jpeg) no-repeat center;
-    background-size: cover;
-    
-    height: 100vh;
-    width: 100vw;
-}
-
-.radio{
-    display: none;
-}
-.images{
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
-
-.images-inner{
-    width: 500%;
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 0.1000) ;
-    transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 0.1000);
-}
-
-.images-slide{
-    float: left;
-}
-
-.images-slide,
-.fake-radio,
-.radio-btn{
-    transition: all 0.5s ease-out;
-}
-
-.fake-radio{
+.harita {
     text-align: center;
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    right: 0;
+    padding: 40px 0 20px 0;
+}
+.toplam {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 245, 238);
+    margin: 40px;
+}
+.cont-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.cont-left img{
+     width: 80px;
+    height: 80px;
+    padding-right: 50px;
+}
+.iletisim-ikon{padding: 1rem;}
+
+.iletisim-ikon i{
+    color: black;
+    padding: 0.60rem ;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 0.75rem;
+    transition: all 0.4s ease;
+}
+.iletisim-ikon :hover i{
+    background-color: bisque;
+    color:black;
+}
+.iletisim-ikon a{
+    color:black;
+    text-decoration: none;
+
+}
+.iletisim-font-design{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    color: black;
+    font-size: 1rem;
 }
 
-#slide1:checked~.images .images-inner{
-    margin-left: 0;
+
+
+.cont-right {
+    padding: 4px;
 }
-#slide2:checked~.images .images-inner{
-    margin-left: -100%;
-}
-#slide3:checked~.images .images-inner{
-    margin-left: -200%;
-}
-#slide1:checked~div .fake-radio .radio-btn:nth-child(1),
-#slide2:checked~div .fake-radio .radio-btn:nth-child(2),
-#slide3:checked~div .fake-radio .radio-btn:nth-child(3){
-    background: #eecfa1;
+.cont-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.radio-btn{
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background: #fff;
-    display: inline-block!important;
-    margin: 0 1px;
+.cont-right form input,
+textarea,
+button {
+    width: 400px;
+    margin: 5px 0;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    padding: 10px 6px;
+    outline: none;
+    border: 1px solid black;
+    transition: all 0.4s ease;
+}
+
+.cont-right form button {
+    background-color:black;
+    color: white;
     cursor: pointer;
 }
 
-#slide1:checked~.labels .labels:nth-child(1),
-#slide2:checked~.labels .labels:nth-child(2),
-#slide3:checked~.labels .labels:nth-child(3){
-    opacity: 1;
+.cont-right form input:hover,
+textarea:hover {
+    background-color: bisque;
+   color: white;
 }
-.label{
-    opacity: 0;
-    position: absolute;
+
+.cont-right form input:focus,
+textarea:focus {
+    color: black;
+    background-color: white;
+}
+
+.cont-right form button:hover {
+    background-color:  #cdb38b;
+    color: black;
+}
+
+
+.flex-kullanim{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.ozet img{
+  width: 100px;
+  height: 100px;
+  margin-left: 40px ;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0 10px;
+}
+section ul li{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px; 
+}
+section ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid  transparent;
+}
+section ul li a:hover{
+    transition: .3s;
+    color: #cdb38b;
+    border-color: #cdb38b;
+    padding-bottom: 1px;
+}
+.font-design{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+}
+.footer-ikon{padding: 1rem; margin: 1rem;}
+
+.footer-ikon i{
+    color: white;
+    padding: 0.60rem ;
+    margin-right: 0.60rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 0.75rem;
+    transition: all 0.4s ease;
+}
+.footer-ikon :hover i{
+    background-color: #cdb38b;
+    color:white;
+}
+.footer-ikon a{
+    color:white;
+    text-decoration: none;
+
 } 
 
-@keyframes bullet{
-    0%,
-    33.32333333333334%{
-        background: #cdb38b;
-    }
-    33.333333333333336%,
-    100%
-    {
-        background: #eecfa1;
-    }
-}
 
-#play1:checked~div .fake-radio .radio-btn:nth-child(1){
-    animation: bullet 15300ms infinite -1000ms;
-}
-#play1:checked~div .fake-radio .radio-btn:nth-child(2){
-    animation: bullet 15300ms infinite -3100ms;
-}
-#play1:checked~div .fake-radio .radio-btn:nth-child(3){
-    animation: bullet 15300ms infinite -7200ms;
-}
 
-@keyframes slide{
-    0%,
-    25.203252032520325%{
-        margin-left: 0;
-    }
-    33.333333333333336%,
-    58.53658536585366%{
-        margin-left: -100;
-    }
-    66.66666666666667%,
-    91.869918699187%{
-        margin-left: -200%;
-    }
-}
 
-.st-slider>#play1:checked~.images .images-inner{
-    animation: slide 12300ms infinite;
-}
 
-.slider-text{
-    padding: 12vw 0 9vw;
-    position: relative;
-}
 
-.banner-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
- /* Volkan  */
-
- .faq-container {
-    max-width: 600px;
-    margin: 50px auto;
-  }
-  
-  .faq {
-    margin-bottom: 10px;
-  }
-  
-  .question {
-    color:#555;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 24px;
-    border-radius: 15px;
-    border: 1px solid #ffe7ba;
-    transition: 0.4s;
-  }
-
-  .question:hover{
-    background-color: #ffe7ba;
-    color: #555;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-  }
-  
-  .answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    padding: 0 10px;
-    font-size: 24px;
-    background-color:#fdf3df;
-    border-radius: 15px;
-  }
-
-  .faq-baslik{
-    margin: 20px auto;
-    font-size: 35px;
-    text-align: center;
-  }
-
-  /* ------------ */
+ 
